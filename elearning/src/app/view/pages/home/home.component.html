@@ -1,0 +1,24 @@
+<!-- <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Small</mat-card-subtitle>
+        <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" >
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+      {{longText}}
+    </mat-card-content>
+  </mat-card> -->
+<div style="height: 23px;"></div>
+<div class="team"><span>OUR COURSES</span></div>
+<div class="container w-100">
+  <!-- <app-card *ngFor="let course of courses" ></app-card> -->
+  <!-- <div class="d-flex flex-row flex-wrap w-100 m-auto bg-info"> -->
+  @for(course of courses; track course) {
+  <app-card [course]="course"></app-card>
+    }
+    <!-- </div> -->
+
+    
+  </div>

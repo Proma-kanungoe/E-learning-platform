@@ -1,0 +1,22 @@
+<ul class="nav nav-tabs bg-dark p-3" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button routerLink="/" style="border: 1px solid gold" class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">E-Learning Platform</button>
+  </li>
+    <li class="nav-item" role="presentation">
+      <button routerLink="/" class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button routerLink="about" class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">About</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button routerLink="login" class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Log In</button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button routerLink="cart" class="nav-link position-relative" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+        Cart <small style="border-radius: 50px;display: block;position:absolute;top:-3px;right: -2px;padding:0 4px 0 4px" class="bg-white text-dark">{{numOfItem}}</small>
+      </button>
+    </li>
+    <!-- <li class="nav-item" role="presentation">
+      <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
+    </li> -->
+  </ul>

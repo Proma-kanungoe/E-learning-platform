@@ -1,0 +1,19 @@
+<h1><b>ORDER DETAILS</b></h1>
+@if(orderDetails){
+    <h2 class="card-title"><b>Name :</b>{{orderDetails.name}}</h2>
+<h2 class="card-title"><b>Email :</b>{{orderDetails.email}}</h2>
+<h2 class="card-title"><b>Phone :</b>{{orderDetails.phone}}</h2>}
+
+<br>
+<hr>
+<h1><b>COURSES</b></h1>
+@for(order of orders; track order){
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title"><b>Title :</b>{{order.title}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{order.type}}</h6>
+          <p class="card-text">{{order.description}}</p>
+         
+        </div>
+      </div>
+}

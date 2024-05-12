@@ -1,0 +1,15 @@
+
+  .mat-app-background {
+    background-color: #212121 !important;
+    color: #FFFFFF !important;
+  }
+
+  .container-navbar{
+    width: 100%;
+    background-color: #212121;
+    color: #fff;
+  }
+  .nav-link{
+    border: none;
+    color: #FFCF57!important;
+  }

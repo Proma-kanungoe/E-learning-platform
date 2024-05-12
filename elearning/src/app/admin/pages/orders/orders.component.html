@@ -1,0 +1,24 @@
+
+<div class="container" style="min-height: 300px;">
+    <table class="table">
+    <thead>
+      <tr>
+        <th>User Details</th>
+        <th>Order Details</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for(order of orders; track order){
+      <tr>
+        <td><b>Name :</b>{{order.name}} <br>
+            <b>Email :</b>{{order.email}} <br>
+            <b>Phone :</b>{{order.phone}} <br>
+        </td>
+        <td><b>Total Orders :</b>{{order.courses.length}} </td>
+        <td> <button class="btn btn-primary"><a class="text-white" routerLink="/admin/order-details/{{order._id}}">View</a></button></td>
+      </tr>
+  }
+  @empty{
+      <tr> <h2>No Order Yet.</h2></tr>
+  }

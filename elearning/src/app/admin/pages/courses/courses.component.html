@@ -1,0 +1,27 @@
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="w-50 m-auto">
+    <h1 class="text-dark m-auto "><b>COURSES</b></h1>
+    <h1>Add New Courses</h1>
+    <div class="form-group mt-3">
+      <label for="formGroupExampleInput">Title</label>
+      <input formControlName="title" type="text" class="form-control" id="formGroupExampleInput" placeholder="Title...">
+    </div>
+    <div class="form-group mt-3">
+      <label for="formGroupExampleInput2">Description</label>
+      <input formControlName="description" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Description...">
+    </div>
+    <select formControlName="type" class="form-control mt-3">
+        <option value="">Type Online/Offline</option>
+        <option value="online">Online</option>
+        <option value="offline">Offline</option>
+      </select>
+      <div class="form-group mt-3">
+        <label for="formGroupExampleInput2">Course Start Date</label>
+        <input formControlName="date" type="date" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+      </div>
+      <div class="form-group mt-3">
+        <label for="formGroupExampleInput">Price</label>
+        <input formControlName="price" type="text" class="form-control" id="formGroupExampleInput" placeholder="Price...">
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

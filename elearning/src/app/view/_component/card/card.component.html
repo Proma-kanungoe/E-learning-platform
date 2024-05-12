@@ -1,0 +1,28 @@
+
+  <div class="card">
+    <div class="card-image loading"><img src="https://images.pexels.com/photos/39866/entrepreneur-startup-start-up-man-39866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" /></div>
+    <div class="card-info">
+      <h3 class="card-title loading"><span>{{course.title}}
+        <!-- <span class="yellow-surname">Falke</span> -->
+    </span></h3>
+      <p class="card-description loading">
+        <span class="personal-info">
+          <!-- <span class="info">{{course.title}}</span> <br> -->
+       {{course.description}}
+        </span>
+      </p>
+      <p class="card-description loading">
+        <span class="personal-info">
+          <!-- <span class="info">{{course.title}}</span> <br> -->
+      <b>Price :</b> {{course.price}} $
+        </span>
+      </p>
+      <div class="card-mediaIcons">
+        <a href="#" class="loading" target="on_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="" class="loading" target="on_blank"><i
+            class="fab fa-instagram"></i></a>
+      </div>
+      <button type="button" class="btn btn-dark" (click)="addToCart(course._id)">Add To Cart</button>
+    </div>
+  </div>
+

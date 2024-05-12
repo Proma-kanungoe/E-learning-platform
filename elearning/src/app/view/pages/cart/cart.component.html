@@ -1,0 +1,41 @@
+
+
+<div style="height: 23px;"></div>
+<div class="team"><span>CART</span></div>
+
+<div class="container" style="min-height: 300px;">
+      <table class="table">
+      <thead>
+        <tr>
+          <th>Details</th>
+          <th>Action</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for(item of cart; track item){
+        <tr>
+          <td>{{item.title}}</td>
+          <td>  <button type="button" class="btn btn-danger" (click)="deleteFromCart(item._id)">Delete</button></td>
+          <td> $ {{item.price}}</td>
+        </tr>
+    }
+    @empty{
+        <tr> <h2>No Item is There.</h2></tr>
+    }
+
+    @if(cart.length>0){
+    <tr>
+        <td></td>
+        <td></td>
+         <td><b>Total: </b> $ {{totalPrice}}</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+         <td><button class="btn btn-dark"><a routerLink="/order">Proceed to Order</a></button></td>
+    </tr>
+        }
+      </tbody>
+    </table>
+  </div>

@@ -1,0 +1,11 @@
+.team {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .team span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-bottom: 4px solid #ffdc0e;
+  }
+  
